@@ -1,0 +1,17 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Build Artifacts & Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.rlib
+target/
+
+# Source Code Safety (Red Line Enforcement)
+*.rs
+*.c
+*.cpp
+*.h
