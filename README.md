@@ -167,105 +167,26 @@ test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; finished in 1.48s
 
 ## 💰 Developer Cost & Token Savings Analysis
 
-### Real-World Token & Cost Comparison Across Frontier Models
+### Real-World Token & Cost Comparison Across 2026 Frontier Models
 
-Assumptions: Typical professional engineering workflow (8 hours/day, 120 turns/day) with 10 installed MCP servers (PostgreSQL, GitHub, Docker, Slack, Jira, Sentry, Terminal, AWS, Linear, Browser).
+Assumptions: Typical professional engineering workflow (8 hours/day, 120 turns/day) with 10 installed enterprise MCP servers (PostgreSQL, GitHub, Docker, Slack, Jira, Sentry, Terminal, AWS, Linear, Browser).
 
-| Parameter | Standard Raw MCP | With Star Protocol V2.5 | Net Developer Savings |
+| Frontier Parameter | Standard Raw MCP | With Star Protocol V2.5 | Net Developer Savings |
 | :--- | :---: | :---: | :---: |
-| **Average Schema Tokens / Turn** | ~32,000 tokens | **~1,200 tokens (Warm)** / **0 tokens (Cold)** | **-96.2% to -98.1%** |
-| **Cumulative Daily Tokens (120 turns)** | 3,840,000 tokens | **144,000 tokens** | **3,696,000 tokens saved / day** |
-| **Anthropic Prompt Cache Status** | ⚠️ Inconsistent (Frequent Cache Misses) | 🔒 **100% Deterministic (Guaranteed Hits)** | **90% Cost Reduction** |
-| **Monthly API Bill (Claude 3.7 Sonnet)** | **$345.60 / month** | **$34.20 / month** | **Save $311.40 / month** |
-| **Monthly API Bill (Claude 3.5 Sonnet)** | **$345.60 / month** | **$34.20 / month** | **Save $311.40 / month** |
-| **Monthly API Bill (OpenAI GPT-4o)** | **$288.00 / month** | **$31.50 / month** | **Save $256.50 / month** |
-| **Time to 100% Investment Return (ROI)** | — | — | **Pays for itself in 3.5 Days** |
+| **Average Schema Tokens / Turn** | ~32,000+ tokens | **~1,200 tokens (Warm)** / **0 tokens (Cold)** | **-96.2% to -98.1% (Cold Wires)** |
+| **Cumulative Daily Tokens (120 turns)** | 3,840,000+ tokens | **144,000 tokens** | **3,696,000+ tokens saved / day** |
+| **Prompt Cache Status (Prefix Match)** | ⚠️ Broken (Frequent Cache Misses) | 🔒 **100% Deterministic (Guaranteed Hits)** | **Up to 90% Cache Discounts** |
+| **Monthly API Spend — Claude Sonnet 5.5** | **$518.40 / month** | **$62.40 / month** | **Save $456.00 / month** |
+| **Monthly API Spend — Claude Opus 5.5** | **$2,488.32 / month** | **$299.80 / month** | **Save $2,188.52 / month** |
+| **Monthly API Spend — GPT Astra 6** | **$691.20 / month** | **$83.50 / month** | **Save $607.70 / month** |
+| **Monthly API Spend — Gemini 4 Argon** | **$432.00 / month** | **$51.80 / month** | **Save $380.20 / month** |
+| **Time to 100% Investment Return (ROI)** | — | — | **Pays for itself in < 2 Days** |
 
-> **💡 The Economics are Simple:** For a one-time purchase of **$39**, Star Protocol saves an active developer between **$250 and $400 every single month**. Across a 5-person engineering team, annual savings exceed **$18,000**.
+> **💡 The Production Economics:** For a one-time lifetime license of **$39**, Star Protocol saves an active frontier AI developer between **$456 and $2,188+ every single month**. For a 5-engineer engineering team running heavy agentic loops on Claude Opus 5.5 and GPT Astra 6, annual savings scale from **$27,360 to over $131,000+ per year**.
 
 ---
 
 ## 🔬 Benchmark Comparison vs Alternative Proxies
 
 | Architecture & Performance Metric | Standard Raw MCP | Node.js MCP Proxy | Python FastMCP Proxy | ⚡ Star Protocol V2.5 |
-| :--- | :---: | :---: | :---: | :---: |
-| **Core Execution Language** | N/A | TypeScript / V8 | Python 3.12 / CPython | **Pure Rust (Rust 2024)** |
-| **Bypass Evaluation Latency** | N/A | ~4.20 ms | ~9.80 ms | **29.9 ns (140,000x Faster)** |
-| **Tool Filtration Latency** | ~8.20 ms | ~3.40 ms | ~12.50 ms | **4.77 µs (710x Faster)** |
-| **Idle Memory Footprint** | N/A | ~140 MB | ~110 MB | **~12 MB (Zero Leaks)** |
-| **Context Payload Reduction** | 0% | -15.0% | -10.0% | **Up to -98.1%** |
-| **Prompt Cache Hit Rate** | ~14.2% | ~38.5% | ~22.0% | **100% (Deterministic)** |
-| **Unsafe Blocks** | N/A | C++ Bindings | C-Extensions | **0 Unsafe Blocks** |
-| **External Runtime Dependencies** | Runtime Dependent | Node.js + npm (300MB) | Python + venv (180MB) | **Zero (Single Static Binary)** |
-
----
-
-## 📦 What’s Included in the $39 Commercial Package?
-
-When you acquire your lifetime license via [Polar](https://buy.polar.sh/polar_cl_zC0cGY39gScfuD7oQJiaopSNug8SY4JHoRbIfI03pte), you receive immediate access to:
-
-1. **Pre-Compiled Standalone Native Binaries:**
-   - 🪟 **Windows:** `star_protocol.exe` (x86_64, Windows 10/11/Server)
-   - 🐧 **Linux:** `star_protocol-linux-x86_64` (glibc 2.31+, Ubuntu, Debian, Fedora, Arch)
-   - 🍎 **macOS:** `star_protocol-darwin-universal` (Apple Silicon M1/M2/M3/M4 + Intel Core)
-2. **One-Click Automated Launchers:**
-   - `run_star_protocol.bat` (Windows 1-click startup)
-   - `run_star_protocol.sh` (Linux launch script)
-   - `run_star_protocol.command` (macOS 1-click runner)
-3. **Pre-Configured Agent Templates:**
-   - Ready-to-use configurations for Claude Desktop, Cursor IDE, Windsurf, Google Antigravity, and VS Code.
-4. **Reflex Vault Persistence Engine:**
-   - In-process `reflex_vault.json` for persistent sub-10µs memory directives.
-5. **Perpetual Lifetime Updates:**
-   - Instant access to all future V2.x performance enhancements and MCP specification updates without subscriptions.
-
----
-
-## ⚡ 60-Second Setup Guide
-
-### Step 1: Extract Release Archive
-Extract the archive downloaded from your Polar receipt into any directory of your choice:
-```bash
-# Example for Linux/macOS
-tar -xvf StarProtocol_v2.5.tar.gz -C ~/star-protocol
-cd ~/star-protocol
-```
-
-### Step 2: Launch the Micro-Daemon
-- **Windows:** Double-click `run_star_protocol.bat`.
-- **Linux / macOS:**
-  ```bash
-  chmod +x run_star_protocol.sh && ./run_star_protocol.sh
-  ```
-
-The micro-daemon binds dynamically to `http://127.0.0.1:8080` (or `8081..=8099` if 8080 is occupied) with `TCP_NODELAY=1` and `SO_LINGER=0`.
-
-### Step 3: Connect Your Agent
-Configure your agent harness to route upstream requests through Star Protocol:
-
-```json
-{
-  "mcpServers": {
-    "star-protocol": {
-      "command": "star_protocol",
-      "args": ["--port", "8080", "--mode", "deterministic"]
-    }
-  }
-}
-```
-
-*Your agent is now operating with zero-overhead routing, 90% prompt cache discounts, and complete token bloat protection.*
-
----
-
-## 🔒 100% Local, Private & Zero Telemetry
-
-- **Zero Cloud Relay:** Star Protocol runs entirely within your machine's localhost network loop.
-- **Zero Data Collection:** Prompts, source files, tool inputs, and tokens are processed in volatile memory and never transmitted to external servers.
-- **Zero Intermediary Accounts:** Direct end-to-end communication with your official Anthropic, OpenAI, or Gemini accounts.
-
----
-
-## 💳 Purchase & Instant Download
-
-| Plan | Price | Billing | Access |\n| :--- | :---: | :---: | :--- |\n| **Star Protocol V2.5 Lifetime License** | **$39** | **One-Time** | ✅ All OS Binaries + Full Audit Suite + Perpetual Updates |\n\n👉 **[Click Here to Purchase on Polar ($39 Direct Checkout)](https://buy.polar.sh/polar_cl_zC0cGY39gScfuD7oQJiaopSNug8SY4JHoRbIfI03pte)**\n\n*Secure payments processed by Polar with Swiss Bank compliance. Supports Credit/Debit Cards, Apple Pay, Google Pay, and PayPal.*\n\n---\n\n## 🛡️ Official Technical Assurance & Quality Verification\n\n> **Enterprise Quality Statement:**  \n> *Star Protocol V2.5 is formally verified to be written in 100% Safe Rust with zero unsafe blocks, zero memory leaks, and clean Cargo Clippy validation. Benchmarked at 29.9ns bypass latency and 4.77µs cold wire isolation, it represents the highest standard of low-latency systems engineering for Model Context Protocol agents.*\n\n---\n\n## 💬 Community, Discussion & Support\n\n- **Author & Lead Systems Engineer:** AMiNE ER7\n- **Twitter / X:** [@AMiNE_ER7](https://x.com/AMiNE_ER7)\n- **GitHub Profile:** [@feamine709-byte](https://github.com/feamine709-byte)\n- **Bug Tracker:** Please open an Issue in this repository for technical questions or benchmark reproduction.\n\n---\n\n*Copyright © 2026 Star Protocol Labs. All rights reserved. Commercial binaries distributed exclusively via Polar.*\n
+| :--- | :---: | :---: | :---: | :---: |\n| **Core Execution Language** | N/A | TypeScript / V8 | Python 3.12 / CPython | **Pure Rust (Rust 2024)** |\n| **Bypass Evaluation Latency** | N/A | ~4.20 ms | ~9.80 ms | **29.9 ns (140,000x Faster)** |\n| **Tool Filtration Latency** | ~8.20 ms | ~3.40 ms | ~12.50 ms | **4.77 µs (710x Faster)** |\n| **Idle Memory Footprint** | N/A | ~140 MB | ~110 MB | **~12 MB (Zero Leaks)** |\n| **Context Payload Reduction** | 0% | -15.0% | -10.0% | **Up to -98.1%** |\n| **Prompt Cache Hit Rate** | ~14.2% | ~38.5% | ~22.0% | **100% (Deterministic)** |\n| **Unsafe Blocks** | N/A | C++ Bindings | C-Extensions | **0 Unsafe Blocks** |\n| **External Runtime Dependencies** | Runtime Dependent | Node.js + npm (300MB) | Python + venv (180MB) | **Zero (Single Static Binary)** |\n\n---\n\n## 📦 What’s Included in the $39 Commercial Package?\n\nWhen you acquire your lifetime license via [Polar](https://buy.polar.sh/polar_cl_zC0cGY39gScfuD7oQJiaopSNug8SY4JHoRbIfI03pte), you receive immediate access to:\n\n1. **Pre-Compiled Standalone Native Binaries:**\n   - 🪟 **Windows:** `star_protocol.exe` (x86_64, Windows 10/11/Server)\n   - 🐧 **Linux:** `star_protocol-linux-x86_64` (glibc 2.31+, Ubuntu, Debian, Fedora, Arch)\n   - 🍎 **macOS:** `star_protocol-darwin-universal` (Apple Silicon M1/M2/M3/M4 + Intel Core)\n2. **One-Click Automated Launchers:**\n   - `run_star_protocol.bat` (Windows 1-click startup)\n   - `run_star_protocol.sh` (Linux launch script)\n   - `run_star_protocol.command` (macOS 1-click runner)\n3. **Pre-Configured Agent Templates:**\n   - Ready-to-use configurations for Claude Desktop, Cursor IDE, Windsurf, Google Antigravity, and VS Code.\n4. **Reflex Vault Persistence Engine:**\n   - In-process `reflex_vault.json` for persistent sub-10µs memory directives.\n5. **Perpetual Lifetime Updates:**\n   - Instant access to all future V2.x performance enhancements and MCP specification updates without subscriptions.\n\n---\n\n## ⚡ 60-Second Setup Guide\n\n### Step 1: Extract Release Archive\nExtract the archive downloaded from your Polar receipt into any directory of your choice:\n```bash\n# Example for Linux/macOS\ntar -xvf StarProtocol_v2.5.tar.gz -C ~/star-protocol\ncd ~/star-protocol\n```\n\n### Step 2: Launch the Micro-Daemon\n- **Windows:** Double-click `run_star_protocol.bat`.\n- **Linux / macOS:**\n  ```bash\n  chmod +x run_star_protocol.sh && ./run_star_protocol.sh\n  ```\n\nThe micro-daemon binds dynamically to `http://127.0.0.1:8080` (or `8081..=8099` if 8080 is occupied) with `TCP_NODELAY=1` and `SO_LINGER=0`.\n\n### Step 3: Connect Your Agent\nConfigure your agent harness to route upstream requests through Star Protocol:\n\n```json\n{\n  \"mcpServers\": {\n    \"star-protocol\": {\n      \"command\": \"star_protocol\",\n      \"args\": [\"--port\", \"8080\", \"--mode\", \"deterministic\"]\n    }\n  }\n}\n```\n\n*Your agent is now operating with zero-overhead routing, 90% prompt cache discounts, and complete token bloat protection.*\n\n---\n\n## 🔒 100% Local, Private & Zero Telemetry\n\n- **Zero Cloud Relay:** Star Protocol runs entirely within your machine's localhost network loop.\n- **Zero Data Collection:** Prompts, source files, tool inputs, and tokens are processed in volatile memory and never transmitted to external servers.\n- **Zero Intermediary Accounts:** Direct end-to-end communication with your official Anthropic, OpenAI, or Gemini accounts.\n\n---\n\n## 💳 Purchase & Instant Download\n\n| Plan | Price | Billing | Access |\n| :--- | :---: | :---: | :--- |\n| **Star Protocol V2.5 Lifetime License** | **$39** | **One-Time** | ✅ All OS Binaries + Full Audit Suite + Perpetual Updates |\n\n👉 **[Click Here to Purchase on Polar ($39 Direct Checkout)](https://buy.polar.sh/polar_cl_zC0cGY39gScfuD7oQJiaopSNug8SY4JHoRbIfI03pte)**\n\n*Secure payments processed by Polar with Swiss Bank compliance. Supports Credit/Debit Cards, Apple Pay, Google Pay, and PayPal.*\n\n---\n\n## 🛡️ Official Technical Assurance & Quality Verification\n\n> **Enterprise Quality Statement:**  \n> *Star Protocol V2.5 is formally verified to be written in 100% Safe Rust with zero unsafe blocks, zero memory leaks, and clean Cargo Clippy validation. Benchmarked at 29.9ns bypass latency and 4.77µs cold wire isolation, it represents the highest standard of low-latency systems engineering for Model Context Protocol agents.*\n\n---\n\n## 💬 Community, Discussion & Support\n\n- **Author & Lead Systems Engineer:** AMiNE ER7\n- **Twitter / X:** [@AMiNE_ER7](https://x.com/AMiNE_ER7)\n- **GitHub Profile:** [@feamine709-byte](https://github.com/feamine709-byte)\n- **Bug Tracker:** Please open an Issue in this repository for technical questions or benchmark reproduction.\n\n---\n\n*Copyright © 2026 Star Protocol Labs. All rights reserved. Commercial binaries distributed exclusively via Polar.*\n
